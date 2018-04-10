@@ -176,8 +176,9 @@ public class Converter {
 			int uniqueid = 1;
 	        for(int i = 0; i < featureVertices.length;i++ )
 	        {
-	        	featureVertices[i] = graph.addVertex(featurelist.get(i));
-	        
+//	        	featureVertices[i] = graph.addVertex(featurelist.get(i));
+	        	featureVertices[i] = graph.addVertex(null);
+	        	
 	        	featureVertices[i].setProperty("uniqueid", uniqueid);
 	        	featureVertices[i].setProperty("label", featurelist.get(i).getLabel());
 	        	featureVertices[i].setProperty("comment", featurelist.get(i).getComment());
@@ -189,7 +190,8 @@ public class Converter {
 	        
 	        for(int i = 0; i < typeVertices.length;i++ )
 	        {
-	        	typeVertices[i] = graph.addVertex(typeList.get(i));
+//	        	typeVertices[i] = graph.addVertex(typeList.get(i));
+	        	typeVertices[i] = graph.addVertex(null);
 	        	
 	        	typeVertices[i].setProperty("uniqueid", uniqueid);
 	        	typeVertices[i].setProperty("label", typeList.get(i).getLabel());
@@ -203,7 +205,8 @@ public class Converter {
 			
 	        for(int i = 0; i < producerVertices.length;i++ )
 	        {
-	        	producerVertices[i] = graph.addVertex(producerList.get(i));
+//	        	producerVertices[i] = graph.addVertex(producerList.get(i));
+	        	producerVertices[i] = graph.addVertex(null);
 	        	
 	        	producerVertices[i].setProperty("uniqueid", uniqueid);	        	
 	        	producerVertices[i].setProperty("label", producerList.get(i).getLabel());
@@ -219,7 +222,8 @@ public class Converter {
 	        
 	        for(int i = 0; i < productVertices.length;i++ )
 	        {
-	        	productVertices[i] = graph.addVertex(productList.get(i));
+//	        	productVertices[i] = graph.addVertex(productList.get(i));
+	        	productVertices[i] = graph.addVertex(null);
 	        	
 	        	productVertices[i].setProperty("uniqueid", uniqueid);
 	        	productVertices[i].setProperty("label", productList.get(i).getLabel());
@@ -237,7 +241,8 @@ public class Converter {
 
 	        for(int i = 0; i < vendorVertices.length;i++ )
 	        {
-	        	vendorVertices[i] = graph.addVertex(vendorList.get(i));
+//	        	vendorVertices[i] = graph.addVertex(vendorList.get(i));
+	        	vendorVertices[i] = graph.addVertex(null);
 	        	
 	        	vendorVertices[i].setProperty("uniqueid", uniqueid);
 	        	vendorVertices[i].setProperty("label", vendorList.get(i).getLabel());
@@ -252,7 +257,8 @@ public class Converter {
     
 	        for(int i = 0; i < offerVertices.length;i++ )
 	        {
-	        	offerVertices[i] = graph.addVertex(offerList.get(i));
+//	        	offerVertices[i] = graph.addVertex(offerList.get(i));
+	        	offerVertices[i] = graph.addVertex(null);
 	        	
 	        	offerVertices[i].setProperty("uniqueid", uniqueid);
 	        	offerVertices[i].setProperty("product", offerList.get(i).getProduct());
@@ -269,7 +275,8 @@ public class Converter {
             
 	        for(int i = 0; i < personVertices.length;i++ )
 	        {
-	        	personVertices[i] = graph.addVertex(personList.get(i));
+//	        	personVertices[i] = graph.addVertex(personList.get(i));
+	        	personVertices[i] = graph.addVertex(null);
 	        	
 	        	personVertices[i].setProperty("uniqueid", uniqueid);
 	        	personVertices[i].setProperty("name", personList.get(i).getName());
@@ -284,7 +291,8 @@ public class Converter {
 	        
 	        for(int i = 0; i < reviewVertices.length;i++ )
 	        {
-	        	reviewVertices[i] = graph.addVertex(reviewList.get(i));
+//	        	reviewVertices[i] = graph.addVertex(reviewList.get(i));
+	        	reviewVertices[i] = graph.addVertex(null);
 	        	
 	        	reviewVertices[i].setProperty("uniqueid", uniqueid);
 	        	reviewVertices[i].setProperty("reviewfor", reviewList.get(i).getReviewfor());
